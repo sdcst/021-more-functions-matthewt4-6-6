@@ -10,9 +10,10 @@ return: float area for the circle
 note: Area of a circle is given by A = pi*(square of the radius)
 You may want to use the math module to complete this problem
 """
-
-def area():
-    return
-
-
+pi = 3.1425
+def area(r):
+    
+    answer = pi*r**2
+    return answer
+    
 assert round(area(2),2) == 12.57

@@ -13,8 +13,16 @@ Sample assertions:
 assert btcTocad(1) == 45000
 (2 points) 
 """
+bitcoin = 45000
+def btcTocad(btc):
+    if type(btc) != str:
+        return btc*bitcoin
+    
+    else: 
+        return 'error'
 
-def btcTocad():
+    
+    
     pass
 
 
@@ -26,5 +34,5 @@ are not executed.
 """
 if __name__ == "__main__":
     assert btcTocad(1) == 45000
-    assert btcTocad(2.5) == 135000
-    assert btcTocad(one) == 'error'
+    assert btcTocad(2.5) == 112500
+    assert btcTocad('one') == 'error'
